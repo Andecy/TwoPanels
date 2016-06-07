@@ -1,16 +1,18 @@
 # Welcome to use TwoPanels
 ------
 
+## What's TwoPanels
 A [TwoPanels](https://github.com/DesarrolloAntonio/TwoPanels) optimizing project
-> * update Fragment to v4.Fragment
-> * suport custom layout
-> * compile with gradle
-> * 撰写发布学术论文（LaTeX 公式支持）
 
 ![Logo](twoPanelsExample/image.gif)
 
-# License
-Copyright 2014 Antonio Corrales
+## What's News
+> * update Fragment to v4.Fragment
+> * suport custom layout
+> * compile with gradle
+
+## License
+Copyright 2016 Andecy
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
