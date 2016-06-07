@@ -7,7 +7,7 @@ This is a [TwoPanels](https://github.com/DesarrolloAntonio/TwoPanels) optimizing
 
 ![Logo](twoPanelsExample/image.gif)
 
-[<i class="icon-renren icon-2x"></i>](http://fortawesome.github.io)
+[<i class="fa fa-camera-retro"></i>](http://fortawesome.github.io)
 
 ## What's News
 * update Fragment to v4.Fragment
