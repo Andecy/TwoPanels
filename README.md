@@ -11,6 +11,7 @@ This is A [TwoPanels](https://github.com/DesarrolloAntonio/TwoPanels) optimizing
 * update Fragment to v4.Fragment
 * suport custom layout
 * compile with gradle
+* add SliderButton function
 
 ## License
 Copyright 2016 Andecy
