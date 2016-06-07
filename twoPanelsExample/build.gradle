@@ -1,12 +1,14 @@
 apply plugin: 'com.android.application'
 
+def libs = rootProject.ext.libraries // 库
+
 android {
-    compileSdkVersion 15
-    buildToolsVersion "23.0.3"
+    compileSdkVersion 23
+    buildToolsVersion "${libs.buildTools}"
 
     defaultConfig {
         applicationId "com.example.twopanelsdemo"
-        minSdkVersion 15
+        minSdkVersion 14
         targetSdkVersion 23
     }
 

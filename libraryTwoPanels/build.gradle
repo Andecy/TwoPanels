@@ -1,11 +1,13 @@
 apply plugin: 'com.android.library'
 
+def libs = rootProject.ext.libraries // 库
+
 android {
-    compileSdkVersion 15
-    buildToolsVersion "23.0.3"
+    compileSdkVersion 23
+    buildToolsVersion "${libs.buildTools}"
 
     defaultConfig {
-        minSdkVersion 15
+        minSdkVersion 14
         targetSdkVersion 23
     }
 
@@ -18,5 +20,5 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:18.0.0'
+    compile "com.android.support:support-v4:${libs.supportVersion}"
 }
