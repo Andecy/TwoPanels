@@ -12,6 +12,7 @@
     <string name="hide_left">Hide Left</string>
     <string name="hide_right">Hide right</string>
     <string name="switch_slider">Switch slider</string>
+    <string name="switch_btn">Switch Button</string>
     <string name="detail">Detail</string>
     <string name="show_two_fragments">Show two fragments</string>
 

@@ -552,11 +552,6 @@ public class TwoPaneLayout extends LinearLayout implements OnTouchListener {
         setParamsValues();
     }
 
-    public void switchButtonsSliderVisibilility(){
-        ((LeftFragment) ((TwoPanelsBaseActivity) mContext).getmLeftFragment()).switchButtonsSliderVisivility();
-        ((RightFragment) ((TwoPanelsBaseActivity) mContext).getmRightFragment()).switchButtonsSliderVisivility();
-    }
-
     public void setmSliderBarConst(int mSliderBarConst) {
         this.mSliderBarConst = mSliderBarConst;
         if (getOrientation() == VERTICAL) {

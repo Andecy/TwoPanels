@@ -29,6 +29,9 @@
             <item
                 android:id="@+id/switch_slider"
                 android:title="@string/switch_slider"/>
+            <item
+                android:id="@+id/switch_btn"
+                android:title="@string/switch_btn"/>
         </menu>
     </item>
 

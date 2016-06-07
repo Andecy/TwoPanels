@@ -50,8 +50,23 @@ public abstract class TwoPanelsBaseActivity extends FragmentActivity implements 
         mRootPanel.setSliderVisibility(visibility);
     }
 
-    protected void switchButtonsSliderVisibilility(){
-        mRootPanel.switchButtonsSliderVisibilility();
+    protected void switchButtonsSliderVisibilility() {
+        try {
+            ((LeftFragment) mLeftFragment).switchButtonsSliderVisivility();
+            ((RightFragment) mRightFragment).switchButtonsSliderVisivility();
+        } catch (Exception e) {
+            Log.e("switchButtonsSlider", e.toString());
+        }
+    }
+
+    public boolean isSlidersButtonActive() {
+        boolean isActive = false;
+        try {
+            isActive = ((LeftFragment) mLeftFragment).isSlidersButtonActive() || ((RightFragment) mRightFragment).isSlidersButtonActive();
+        } catch (Exception e) {
+            Log.e("isSlidersButtonActive", e.toString());
+        }
+        return isActive;
     }
 
     protected void setBaseOrientation(int orientation) {

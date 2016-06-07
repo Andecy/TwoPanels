@@ -21,6 +21,14 @@ public class MainActivity extends TwoPanelsBaseActivity {
     }
 
     @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        if (isSlidersButtonActive()){
+            switchButtonsSliderVisibilility();
+        }
+    }
+
+    @Override
     protected void setPanelsView() {
         setContentView(R.layout.activity_main);
     }
@@ -54,6 +62,8 @@ public class MainActivity extends TwoPanelsBaseActivity {
             showTwoFragments();
         } else if (itemId == R.id.switch_slider) {
             switchSliderVisibility();
+        } else if (itemId == R.id.switch_btn) {
+            switchButtonsSliderVisibilility();
         } else {
             return super.onOptionsItemSelected(item);
         }

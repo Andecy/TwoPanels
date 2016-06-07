@@ -100,6 +100,10 @@ public class RightFragment extends Fragment {
         }
     }
 
+    public Boolean isSlidersButtonActive() {
+        return mSlidersButtonActive;
+    }
+
     public void setSliderClickable(Boolean clickable) {
         mSlideRightButton.setClickable(clickable);
     }
