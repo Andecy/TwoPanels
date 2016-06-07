@@ -2,14 +2,15 @@
 ------
 
 ## What's TwoPanels
-A [TwoPanels](https://github.com/DesarrolloAntonio/TwoPanels) optimizing project
+This is A [TwoPanels](https://github.com/DesarrolloAntonio/TwoPanels) optimizing project
+> TwoPanels is a full customizable library where you can hide and show the fragments in vertical and horizontal and customize the behaviour on orientation changes. The library have a slider separating the fragments, you can drag this slider and the fragments resize the views inside.
 
 ![Logo](twoPanelsExample/image.gif)
 
 ## What's News
-> * update Fragment to v4.Fragment
-> * suport custom layout
-> * compile with gradle
+* update Fragment to v4.Fragment
+* suport custom layout
+* compile with gradle
 
 ## License
 Copyright 2016 Andecy
