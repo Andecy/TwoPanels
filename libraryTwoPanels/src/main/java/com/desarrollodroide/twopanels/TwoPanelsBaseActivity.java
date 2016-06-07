@@ -27,8 +27,7 @@ public abstract class TwoPanelsBaseActivity extends FragmentActivity implements 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.two_panels_activity_main);
-
+        setPanelsView();
         mRootPanel = (TwoPaneLayout) findViewById(R.id.root);
         mRootPanel.setOrientation(mFragmentsOrientation);
 
@@ -39,14 +38,20 @@ public abstract class TwoPanelsBaseActivity extends FragmentActivity implements 
         }
     }
 
-    protected void switchSliderVisitility() {
+    protected abstract void setPanelsView();
+
+    protected void switchSliderVisibility() {
         if (mIsLeftShowing && mIsRightShowing) {
-            mRootPanel.changeSliderVisitility();
+            mRootPanel.changeSliderVisibility();
         }
     }
 
-    protected void setSliderVisitility(Boolean visibility) {
-        mRootPanel.setSliderVisitility(visibility);
+    protected void setSliderVisibility(Boolean visibility) {
+        mRootPanel.setSliderVisibility(visibility);
+    }
+
+    protected void switchButtonsSliderVisibilility(){
+        mRootPanel.switchButtonsSliderVisibilility();
     }
 
     protected void setBaseOrientation(int orientation) {

@@ -493,7 +493,7 @@ public class TwoPaneLayout extends LinearLayout implements OnTouchListener {
         anim.start();
     }
 
-    public void changeSliderVisitility() {
+    public void changeSliderVisibility() {
         if (mIsSliderVisible) {
             if (getOrientation() == LinearLayout.HORIZONTAL) {
                 startAnimation(mSliderBar, "MyWidth", mSliderBarConst, 0);
@@ -547,9 +547,14 @@ public class TwoPaneLayout extends LinearLayout implements OnTouchListener {
         return mSliderBar;
     }
 
-    public void setSliderVisitility(Boolean mIsSliderVisible) {
+    public void setSliderVisibility(Boolean mIsSliderVisible) {
         this.mIsSliderVisible = mIsSliderVisible;
         setParamsValues();
+    }
+
+    public void switchButtonsSliderVisibilility(){
+        ((LeftFragment) ((TwoPanelsBaseActivity) mContext).getmLeftFragment()).switchButtonsSliderVisivility();
+        ((RightFragment) ((TwoPanelsBaseActivity) mContext).getmRightFragment()).switchButtonsSliderVisivility();
     }
 
     public void setmSliderBarConst(int mSliderBarConst) {

@@ -21,6 +21,11 @@ public class MainActivity extends TwoPanelsBaseActivity {
     }
 
     @Override
+    protected void setPanelsView() {
+        setContentView(R.layout.activity_main);
+    }
+
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu items for use in the action bar
         MenuInflater inflater = getMenuInflater();
@@ -48,7 +53,7 @@ public class MainActivity extends TwoPanelsBaseActivity {
         } else if (itemId == R.id.show_two_fragments) {
             showTwoFragments();
         } else if (itemId == R.id.switch_slider) {
-            switchSliderVisitility();
+            switchSliderVisibility();
         } else {
             return super.onOptionsItemSelected(item);
         }
