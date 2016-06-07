@@ -23,7 +23,7 @@ public class MainActivity extends TwoPanelsBaseActivity {
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);
-        if (isSlidersButtonActive()){
+        if (isSlidersButtonActive()) {
             switchButtonsSliderVisibilility();
         }
     }

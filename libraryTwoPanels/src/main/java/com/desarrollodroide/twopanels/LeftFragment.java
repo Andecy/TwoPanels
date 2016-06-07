@@ -95,9 +95,9 @@ public class LeftFragment extends Fragment {
 		}
 	}
 
-    public Boolean isSlidersButtonActive() {
-        return mSlidersButtonActive;
-    }
+	public Boolean isSlidersButtonActive() {
+		return mSlidersButtonActive;
+	}
 
     public ImageButton getmSlideLeftButton() {
 		return mSlideLeftButton;
