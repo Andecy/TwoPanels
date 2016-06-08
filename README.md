@@ -15,4 +15,4 @@ This is a [TwoPanels](https://github.com/DesarrolloAntonio/TwoPanels) optimizing
 
 ## License
 
-This project is under the MIT License. See the [LICENSE](LICENSE) file for the full license text.
+This project is under Apache License v2.0. See the [LICENSE](LICENSE) file for full license text.
