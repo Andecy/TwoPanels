@@ -13,4 +13,6 @@ This is a [TwoPanels](https://github.com/DesarrolloAntonio/TwoPanels) optimizing
 * compile with gradle
 * add SliderButton function
 
+## License
 
+This project is under the MIT License. See the [LICENSE](LICENSE) file for the full license text.
