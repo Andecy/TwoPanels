@@ -4,12 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
     <TextView
         android:gravity="center"
         android:text="@string/hello_world"
         android:background="@android:color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+
     <include layout="@layout/two_panels"/>
 
 </LinearLayout>
