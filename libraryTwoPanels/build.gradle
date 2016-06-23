@@ -1,14 +1,17 @@
 apply plugin: 'com.android.library'
-
-def libs = rootProject.ext.libraries // 库
+apply plugin: 'com.novoda.bintray-release'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "${libs.buildTools}"
+    compileSdkVersion 24
+    buildToolsVersion "24.0.0"
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 23
+        targetSdkVersion 24
+    }
+
+    lintOptions{
+        abortOnError false
     }
 
     buildTypes {
@@ -20,5 +23,14 @@ android {
 }
 
 dependencies {
-    compile "com.android.support:support-v4:${libs.supportVersion}"
+    compile 'com.android.support:support-v4:24.0.0'
+}
+
+publish {
+    userOrg = 'andecy'//bintray.com用户名
+    groupId = 'com.andecy'//jcenter上的路径
+    artifactId = 'twopanels'//项目名称
+    publishVersion = '0.2'//版本号
+    desc = 'Two panels layout fully customizable with a draggable divider.'//描述，不重要
+    website = 'http://andecy.com'//网站，不重要；尽量模拟github上的地址，例如我这样的；当然你有地址最好了
 }
